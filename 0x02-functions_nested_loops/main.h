@@ -1,0 +1,2 @@
+/*Header file for functions*/
+int _putchar(char c);

@@ -1,7 +1,8 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/** betty style doc for function main goes there
+/*
+ * betty style doc for function main goes there
  * main -program entry point
  * Return: return 0
  */

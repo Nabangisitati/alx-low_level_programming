@@ -23,8 +23,8 @@ int main(void)
 	}
 	else if (lastdigit < 6 && lastdigit != 0)
 	{
-		printf("Last digit of %d is %d and is l");
-		printf("ess than 6 and not 0\n", n, lastdigit);
+		printf("Last digit of %d is %d and is l", n, lastdigit);
+		printf("ess than 6 and not 0\n");
 	}
 	else
 	{

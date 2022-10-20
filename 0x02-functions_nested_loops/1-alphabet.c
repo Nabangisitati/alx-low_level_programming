@@ -6,9 +6,11 @@
  */
 int main(void)
 {
+	int i;
+
 	void print_alphabet(void)
 	{
-		int i = 97;
+		i = 97;
 
 		while (i <= 122)
 		{

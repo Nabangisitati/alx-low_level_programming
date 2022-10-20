@@ -1,0 +1,19 @@
+#include <stdio.h>
+/**
+ * main --entry point
+ * prints base 10 single digit numbers
+ * Return: Return 0
+ */
+int main(void)
+{
+	int i = 0;
+
+	if (i >= 0 && i <= 9)
+	{
+		printf("%d", i);
+		i++;
+	}
+	printf("\n");
+	return (0);
+}
+

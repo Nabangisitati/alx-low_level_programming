@@ -8,7 +8,7 @@ int main(void)
 {
 	int i = 0;
 
-	if (i >= 0 && i <= 9)
+	while (i >= 0 && i <= 9)
 	{
 		printf("%d", i);
 		i++;

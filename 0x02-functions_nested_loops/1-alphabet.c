@@ -1,4 +1,14 @@
 #include "main.h"
+
+void print_alphabet(void)
+{
+	int i = 97;
+	while (i <= 122)
+	{
+		_putchar(i);
+		i++;
+	}
+}
 /**
  * main - checks code
  * program prints alphabet
@@ -6,18 +16,7 @@
  */
 int main(void)
 {
-	int i;
-
-	void print_alphabet(void)
-	{
-		i = 97;
-
-		while (i <= 122)
-		{
-			_putchar(i);
-			i++;
-		}
-	}
+	print_alphabet();
 	_putchar('\n');
 	return (0);
 }

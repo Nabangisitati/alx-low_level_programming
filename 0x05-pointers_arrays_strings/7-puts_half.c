@@ -9,17 +9,17 @@ void puts_half(char *str)
 {
 	int c = 0;
 	int h;
-	
+
 	while (str[c] != '\0')
 	{
 		c++;
 	}
-	if ((i % 2) == 0)
+	if ((c % 2) == 0)
 		h = (c / 2) + 1;
 	else
 		h = (c - 1) / 2;
 
-	while (h < i)
+	while (h < c)
 	{
 		_putchar(str[h]);
 		h++;

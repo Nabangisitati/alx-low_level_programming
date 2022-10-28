@@ -17,6 +17,11 @@ char *_strncpy(char *dest, char *src, int n)
 		dest[i] = src[i];
 		i++;
 	}
-	dest[i] = '\0';
+	/*Fill Terminating null if src ended before n bytes could be reached*/
+	while (i < n)
+	{
+		dest[i] = '\0';
+		i++;
+	}
 	return (dest);
 }

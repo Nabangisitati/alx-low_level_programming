@@ -11,20 +11,23 @@ char *_strcat(char *dest, char *src)
 {
 	int i, k;
 	int counter = 0;
-	char *concatenated;
-	/*Copy contents of dest into concatenated*/
+
+	k = 0;
+
+	/*increase counter to last element of dest*/
 	for (i = 0; dest[i] != '\0'; ++i)
 	{
-		concatenated[i] = dest[i];
 		counter++;
 	}
-	/*copy contents of src into concatenated starting from where dest stopped*/
-	for (k = 0; src[k] != '\0'; ++k)
+	/*append elements of src to dest from its last element*/
+	while (src[k] != '\0')
 	{
-		concatenated[counter] = src[k];
+		dest[counter] = src[k];
+		k++;
+		counter++;
 	}
 	/*Terminating null*/
-	concatenated[counter] = '\0';
+	dest[counter] = '\0';
 
-	return (concatenated);
+	return (dest);
 }

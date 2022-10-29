@@ -8,20 +8,17 @@
 
 void reverse_array(int *a, int n)
 {
-	int j, i, k;
-	int *b;
+	int j;
 
 	/*Reverse original array a and assign into into a  new array b[]*/
-	for (j = (n - 1); j >= 0; j--)
+	for (j = 0; j < n; j++)
 	{
-		for (i = 0; i < n; i++)
-		{
-			b[i] = a[j];
-		}
+		int t = 0;
+
+		n--;
+		t = a[j];
+		a[j] = a[n];
+		a[n] = t;
 	}
-	/*Copy contents of b back into original array a*/
-	for (k = 0; k < n; k++)
-	{
-		a[k] = b[k];
-	}
+
 }

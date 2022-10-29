@@ -2,7 +2,7 @@
 
 /**
  * cap_string - capitalizes each word of  a string
- * @s: pointer to a char 
+ * @s: pointer to a char
  * Return: char pointer
  */
 
@@ -22,7 +22,9 @@ char *cap_string(char *s)
 		    || s[index - 1] == '.' || s[index - 1] == '!'
 		  || s[index - 1] == '?' || s[index - 1] == '"'
 		  || s[index - 1] == '(' || s[index - 1] == ')'
-		 || s[index - 1] == '{' || s[index - 1] == '}')
+		 || s[index - 1] == '{' || s[index - 1] == '}'
+		 || s[index - 1] == '\n' || i == 0
+		|| s[index - 1] == '' || s[index - 1] == '\t')
 		{
 			s[index] = s[index] - 32;
 		}

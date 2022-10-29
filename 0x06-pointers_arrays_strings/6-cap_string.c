@@ -20,7 +20,13 @@ char *cap_string(char *s)
 		/*Check for word separators*/
 		if (s[index - 1] == ',' || s[index - 1] == ';'
 		    || s[index - 1] == '.' || s[index - 1] == '!'
-		    || s[index - 1] == '?') || s[index-1]
-		{}
+		  || s[index - 1] == '?' || s[index - 1] == '"'
+		  || s[index - 1] == '(' || s[index - 1] == ')'
+		 || s[index - 1] == '{' || s[index - 1] == '}')
+		{
+			s[index] = s[index] - 32;
+		}
+		index++;
 	}
+	return (s);
 }

@@ -15,10 +15,10 @@ int main(void)
 	{
 		if (i % 5 == 0)
 		{
-			sum += i;
+			sum = sum + i;
 		}
 		i++;
 	}
-	printf("sum of multiples of 5  below 1024 is %d", sum);
+	printf("%d\n", sum);
 	return (0);
 }

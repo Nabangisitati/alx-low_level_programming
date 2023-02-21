@@ -7,13 +7,13 @@ int _putchar(char c);
  */
 void print_alphabet(void)
 {
-	int i = 97;
+	char i = 'a';
 
 	/*Using ASCII Code to print lowercase alphabet*/
-	while (i <= 122)
+	while (i <= 'z')
 	{
 		_putchar(i);
 		i++;
 	}
-	 _putchar("\n");
+	 _putchar('\n');
 }

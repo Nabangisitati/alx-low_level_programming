@@ -1,4 +1,4 @@
-int _putchar(char c);
+#include "main.h"
 
 /**
  * print_sign - prints the sign of an integer n

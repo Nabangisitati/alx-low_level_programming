@@ -1,4 +1,4 @@
-int _putchar(char c)
+#include "main.h"
 
 /**
  * _isalpha - checksfor alphabetic character
@@ -8,7 +8,7 @@ int _putchar(char c)
  */
 int _isalpha(int c)
 {
-	if (c >=[a - zA - Z])
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 	{
 		return (1);
 	}

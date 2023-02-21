@@ -9,7 +9,6 @@ void print_alphabet(void)
 {
 	char i = 'a';
 
-	/*Using ASCII Code to print lowercase alphabet*/
 	while (i <= 'z')
 	{
 		_putchar(i);

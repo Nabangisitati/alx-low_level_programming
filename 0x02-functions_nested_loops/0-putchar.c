@@ -8,12 +8,12 @@
 int main(void)
 {
 	char word[] = "_putchar";
-	int i = 0;
+	int i;
+	int j = 8;
 
-	while (word[i] != '0')
+	for (i = 0; i < j i++)
 	{
 		_putchar(word[i]);
-		i++;
 	}
 	_putchar('\n');
 	return (0);

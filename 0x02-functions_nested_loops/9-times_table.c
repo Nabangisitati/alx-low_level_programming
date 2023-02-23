@@ -17,15 +17,15 @@ void times_table(void)
 			_putchar(',');
 			 _putchar(' ');
 			p = j * i;
-			if (p > 9)
+			if (p <= 9)
 			{
-				 _putchar((p / 10) + '0');
+				 _putchar(' ');
 			}
 			else
 			{
-				_putchar((p % 10) + '0');
+				_putchar((p / 10) + '0');
 			}
-			/*_putchar((p % 10) + '0');*/
+			_putchar((p % 10) + '0');
 		}
 		_putchar('\n');
 	}

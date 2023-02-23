@@ -30,9 +30,9 @@ void print_to_98(int n)
 		while (n >= 98)
 		{
 			if (n > 98)
-				printf("%d, ", i);
+				printf("%d, ", n);
 			else
-				printf("%d", i);
+				printf("%d", n);
 			n--;
 		}
 	}

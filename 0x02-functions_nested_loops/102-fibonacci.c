@@ -7,20 +7,21 @@
  */
 int main(void)
 {
-	int counter, nextnum;
-	int firstnum = 1;
-	int secondnum = 2;
+	int counter;
+	unsigned long nextnum;
+	unsigned long firstnum = 1;
+	unsigned long secondnum = 2;
 
-	printf("%d, %d, ", firstnum, secondnum);
+	printf("%lu, %lu, ", firstnum, secondnum);
 	for (counter = 3; counter <= 50; counter++)
 	{
 		nextnum = firstnum + secondnum;
 		firstnum = secondnum;
 		secondnum = nextnum;
 		if (counter < 50)
-			printf("%d, ", nextnum);
+			printf("%lu, ", nextnum);
 		else
-			printf("%d\n", nextnum);
+			printf("%lu\n", nextnum);
 	}
 	return (0);
 }

@@ -9,11 +9,12 @@
  */
 void print_to_98(int n)
 {
+	int i;
+	int j;
+
 	/*check if n is less than or greater than 98*/
 	if (n <= 98)
 	{
-		int i;
-
 		for (i = n; i <= 98; i++)
 		{
 			if (i < 98)
@@ -28,8 +29,6 @@ void print_to_98(int n)
 	}
 	else
 	{
-		int j;
-
 		for (j = n; j >= 98; j--)
 		{
 			if (j > 98)
